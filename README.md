@@ -8,7 +8,7 @@ You can install the requirement libraries via `pip install -r requirements.txt` 
 
 First step is to download the DocRED dataset, following the instructions from the [original repository](https://github.com/thunlp/DocRED/tree/master). As a result, you should have a new folder `./DocRED`.
 
-Then you can run the pre-processing pipeline [DocRED_preocess/main.sh](DocRED_preocess/main.sh).
+Then you can run the pre-processing pipeline [DocRED_preprocess/main.sh](DocRED_preprocess/main.sh).
 
 ## Running our REPLM framework
 
