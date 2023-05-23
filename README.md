@@ -12,10 +12,10 @@ Then you can run the pre-processing pipeline [DocRED_preprocess/main.sh](DocRED_
 
 ## Running our REPLM framework
 
-An example code is given below:
+Run the inference for L different sets of in-context few-shot examples (by changing <seed_no>):
 
 `python extract_relations.py --relation <rel_id> --seed <seed_no> --experiments_main_folder experiment_<rel_id> --experiment_folder <seed_no>`
 
-If you run it for multiple seeds, you can aggregated their results as follows: 
+Aggregate their results as follows: 
 
 `python aggregate_extractions.py --temperature <temperature> --threshold <threshold> --experiments_main_folder experiment_<rel_id>`
