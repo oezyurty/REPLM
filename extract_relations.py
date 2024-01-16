@@ -98,8 +98,8 @@ if __name__ == "__main__":
     #For adversarial experiments. NOT NEEDED FOR THE MAIN RESULTS
     parser.add_argument('--subset_context', type=float, default=1.0, help='What percentage of subset to keep. Used for noise experiments')
 
-    parser.add_argument('-emf', '--experiments_main_folder', type=str, default="./experiments_gpt", help='path to the main experiment folder')
-    parser.add_argument('-ef', '--experiment_folder', type=str, default="default_exp", help='name of subdirectory for the specific experiment')
+    parser.add_argument('-emf', '--experiments_main_folder', type=str, default="./experiments_P1001", help='path to the main experiment folder')
+    parser.add_argument('-ef', '--experiment_folder', type=str, default="seed0", help='name of subdirectory for the specific experiment')
     parser.add_argument('--prediction_path', type=str, default="predictions.csv", help='name of the prediction file')
     parser.add_argument('-l', '--log', type=str, default='train.log')
 

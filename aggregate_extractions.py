@@ -248,7 +248,7 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--experiments_main_folder', type=str, default="experiments_gpt", help='Path to the main experiments folder, under which there are extractions from multiple seeds.')
+    parser.add_argument('--experiments_main_folder', type=str, default="experiments_P1001", help='Path to the main experiments folder, under which there are extractions from multiple seeds.')
 
     parser.add_argument('-tmp', '--temperature', type=float, default=0.1, help='The temperature of the context set weight calculation')
     parser.add_argument('-th', '--threshold', type=float, default=0.2, help='The probability threshold for accepting the generated knowledge triplets')
