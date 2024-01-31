@@ -2,17 +2,6 @@
 
 ![The overview of our REPLM framework](overview.png)
 
-The original implementation of the paper. You can cite the paper as below. 
-
-```
-@article{ozyurt2023context,
-  title={In-Context Few-Shot Relation Extraction via Pre-Trained Language Models},
-  author={Ozyurt, Yilmazcan and Feuerriegel, Stefan and Zhang, Ce},
-  journal={arXiv preprint arXiv:2310.11085},
-  year={2023}
-}
-```
-
 We used Python 3.8.5 in our experiments. 
 
 You can install the requirement libraries via `pip install -r requirements.txt` into your new virtual Python environment.
