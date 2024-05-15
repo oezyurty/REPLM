@@ -2,17 +2,6 @@
 
 ![The overview of our REPLM framework](overview.png)
 
-The original implementation of the paper. You can cite the paper as below. 
-
-```
-@article{ozyurt2023context,
-  title={In-Context Few-Shot Relation Extraction via Pre-Trained Language Models},
-  author={Ozyurt, Yilmazcan and Feuerriegel, Stefan and Zhang, Ce},
-  journal={arXiv preprint arXiv:2310.11085},
-  year={2023}
-}
-```
-
 We used Python 3.8.5 in our experiments. 
 
 You can install the requirement libraries via `pip install -r requirements.txt` into your new virtual Python environment.
@@ -34,6 +23,13 @@ After running for different seeds, aggregate their results as follows:
 `python aggregate_extractions.py --temperature <temperature> --threshold <threshold> --experiments_main_folder experiment_<rel_id>`
 
 This should yield `experiment_<rel_id>/aggretaged_predictions.csv`
+
+## Running our REPLM framework on OpenAI's GPT models
+As our REPLM framework is transferable to other LM backbones, you can easily replace the default LM with your favourite one, such as one of the GPT models from OpenAI. Specifically, if you want to experiment with `gpt-3.5-turbo`, you can run the inference via the following:
+
+`python extract_relations_openai.py --model_name gpt-3.5-turbo --relation <rel_id> --seed <seed_no> --experiments_main_folder experiment_<rel_id> --experiment_folder seed<seed_no>`
+
+**Important Note:** Don't forget to set `OPENAI_API_KEY` environment variable before running the experiments. 
 
 ## Evaluation via external knowledge base
 
